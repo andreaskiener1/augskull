@@ -1,1 +1,28 @@
 
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>skull</title>
+        <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+        <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+    </head>  
+  <body>
+    
+      <a-scene>
+
+      <a-asset>
+        <a-asset-item
+          id="skull"
+          src="">
+        </a-asset-item>
+      </a-asset>
+
+      <a-marker preset="hiro">
+         <a-entity gltf-model="##skull"></a-entity>
+      </a-marker>
+      
+      <a-entity camera></a-entity>
+    </a-scene>
+ 
+  </body>
+</html>
